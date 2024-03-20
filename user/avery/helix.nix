@@ -1,10 +1,10 @@
 { config, pkgs, theme, ... }:
 
 {
-  home.sessionVariables.EDITOR = "hx";
 
   programs.helix = {
     enable = true;
+    defaultEditor = true;
     settings = {
       theme = "onedark";
       editor = {

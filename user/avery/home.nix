@@ -2,14 +2,13 @@
 
 in {
   imports = [
-    ./git.nix
-    ./helix.nix
     ./direnv.nix
+    ./helix.nix
+    ./git.nix
   ];
 
   home.username = "avery";
   home.homeDirectory = "/home/avery";
-  home.sessionVariables.EDITOR = "hx";
 
   home.packages = with pkgs; [
     alacritty
