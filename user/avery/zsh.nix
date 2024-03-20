@@ -7,8 +7,8 @@
     enableAutosuggestions = true;
     syntaxHighlighting.enable = true;
     dotDir = ".config/zsh";
-    #history.size = 10000;
-    #history.path = "${config.xdg.dataHome}/zsh/history";
+    history.size = 10000;
+    history.path = "${config.xdg.dataHome}/zsh/history";
 
     oh-my-zsh = {
       enable = true;
@@ -18,7 +18,7 @@
 
     shellAliases = {
       ll = "ls -l";
-      update = "sudo nixos-rebuild switch";
+      update = "sudo nixos-rebuild switch --flake";
     };
   };
 }
