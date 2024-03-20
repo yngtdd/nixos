@@ -115,13 +115,8 @@
     options = "--delete-older-than 30d";
   };
 
-  #environment.variables = {
-   # EDITOR = "hx";
-   # YO = "YO";
-  #};
-
-  programs.zsh.enable = true;
-  users.defaultUserShell = pkgs.zsh;
+  #programs.zsh.enable = true;
+  #users.defaultUserShell = pkgs.zsh;
   
   system.stateVersion = "23.11"; 
 
