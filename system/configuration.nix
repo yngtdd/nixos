@@ -114,10 +114,10 @@
     options = "--delete-older-than 30d";
   };
 
-  environment.variables = {
-    EDITOR = "hx";
-    YO = "YO";
-  };
+  #environment.variables = {
+  #  EDITOR = "hx";
+  #  YO = "YO";
+  #};
 
   #users.defaultUserShell = pkgs.zsh;
   
