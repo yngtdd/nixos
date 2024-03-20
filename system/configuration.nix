@@ -115,8 +115,8 @@
     options = "--delete-older-than 30d";
   };
 
-  #programs.zsh.enable = true;
-  #users.defaultUserShell = pkgs.zsh;
+  programs.zsh.enable = true;
+  users.defaultUserShell = pkgs.zsh;
   
   system.stateVersion = "23.11"; 
 
