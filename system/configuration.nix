@@ -103,7 +103,6 @@
 
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    alacritty
     gnomeExtensions.hue-lights
     teams-for-linux
     wget
@@ -119,6 +118,8 @@
     EDITOR = "hx";
     YO = "YO";
   };
+
+  #users.defaultUserShell = pkgs.zsh;
   
   system.stateVersion = "23.11"; 
 
