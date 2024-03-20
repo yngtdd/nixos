@@ -17,6 +17,7 @@ in {
     bat
     blender
     bottom
+    cachix
     dust
     flameshot
     firefox

@@ -17,6 +17,11 @@
     };
 
     shellAliases = {
+      #''..2'' = "cd ../..";
+      #''..3'' = "cd ../../..";
+      #''..4'' = "cd ../../../..";
+      fzf = "fzf --preview 'bat --color=always {}'";
+      hzf = "hx $(fzf)";
       ll = "ls -l";
       update = "sudo nixos-rebuild switch --flake";
     };
