@@ -2,6 +2,7 @@
 
 in {
   imports = [
+    ./zsh.nix
     ./direnv.nix
     ./helix.nix
     ./git.nix
@@ -33,6 +34,7 @@ in {
     signal-desktop
     shiori
     wget
+    zsh
   ];
 
   fonts.fontconfig.enable = true;
