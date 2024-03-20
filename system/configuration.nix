@@ -106,6 +106,7 @@
     gnomeExtensions.hue-lights
     teams-for-linux
     wget
+    zsh
   ];  
 
   nix.gc = {
@@ -119,6 +120,7 @@
     YO = "YO";
   };
 
+  programs.zsh.enable - true;
   users.defaultUserShell = pkgs.zsh;
   
   system.stateVersion = "23.11"; 
