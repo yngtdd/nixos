@@ -6,6 +6,7 @@
     enableCompletion = true;
     enableAutosuggestions = true;
     syntaxHighlighting.enable = true;
+    dotDir = ".config/zsh";
     #history.size = 10000;
     #history.path = "${config.xdg.dataHome}/zsh/history";
 

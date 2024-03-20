@@ -2,7 +2,7 @@
 
 in {
   imports = [
-    ./zsh.nix
+    #./zsh.nix
     ./direnv.nix
     ./helix.nix
     ./git.nix
@@ -48,6 +48,27 @@ in {
     settings = {
       add_newline = true;
       line_break.disabled = true;
+    };
+  };
+
+  programs.zsh = {
+    enable = true;
+    enableCompletion = true;
+    enableAutosuggestions = true;
+    syntaxHighlighting.enable = true;
+    dotDir = ".config/zsh";
+    #history.size = 10000;
+    #history.path = "${config.xdg.dataHome}/zsh/history";
+
+    oh-my-zsh = {
+      enable = true;
+      plugins = [ "git" ];
+      theme = "robbyrussell";
+    };
+
+    shellAliases = {
+      ll = "ls -l";
+      update = "sudo nixos-rebuild switch";
     };
   };
 
