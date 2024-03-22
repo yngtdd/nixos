@@ -34,7 +34,6 @@ in {
     starship
     signal-desktop
     shiori
-    thefuck
     wget
     zsh
   ];
