@@ -12,14 +12,11 @@
 
     oh-my-zsh = {
       enable = true;
-      plugins = [ "git" "thefuck" ];
+      plugins = [ "git" ];
       theme = "robbyrussell";
     };
 
     shellAliases = {
-      #''..2'' = "cd ../..";
-      #''..3'' = "cd ../../..";
-      #''..4'' = "cd ../../../..";
       fzf = "fzf --preview 'bat --color=always {}'";
       hzf = "hx $(fzf)";
       ll = "ls -l";
