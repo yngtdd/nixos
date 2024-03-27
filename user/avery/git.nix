@@ -20,11 +20,12 @@
       merge.conflictstyle = "diff3";
       diff.colorMoved = "default";
       delta = {
-        features = "wooly-mammoth";
+        features = "villsau";
         navigate = true;
         side-by-side = true;
         hyperlinks = true;
       };
+      include.path = "/home/avery/nixos/themes/themes.gitconfig";
     };
   };
 }
