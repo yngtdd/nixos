@@ -13,11 +13,13 @@ in {
 
   home.packages = with pkgs; [
     alacritty
+    ani-cli
     anki-bin
     bat
     blender
     bottom
     cachix
+    delta
     dust
     flameshot
     firefox

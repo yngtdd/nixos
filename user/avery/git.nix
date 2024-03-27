@@ -12,6 +12,19 @@
     };
     extraConfig = {
       init.defaultBranch = "main";
+      core = {
+        editor = "hx";
+        pager = "delta";
+        whitespace = "trailing-space,space-before-tab";
+      };
+      merge.conflictstyle = "diff3";
+      diff.colorMoved = "default";
+      delta = {
+        features = "wooly-mammoth";
+        navigate = true;
+        side-by-side = true;
+        hyperlinks = true;
+      };
     };
   };
 }
