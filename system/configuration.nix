@@ -64,11 +64,17 @@
     #media-session.enable = true;
   };
 
+  musnix.enable = true;
+
   users.users.avery = {
     isNormalUser = true;
     initialPassword = "password";
     description = "Avery Young";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ 
+      "audio"
+      "networkmanager"
+      "wheel"
+    ];
   };
 
   users.users.yngtdd = {

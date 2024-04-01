@@ -2,6 +2,7 @@
 
 in {
   imports = [
+    ./halloy.nix
     ./zsh.nix
     ./direnv.nix
     ./helix.nix
@@ -24,6 +25,7 @@ in {
     flameshot
     firefox
     fzf
+    halloy
     hyfetch
     lf
     nerdfonts
@@ -31,6 +33,7 @@ in {
     vim
     neovim
     obs-studio
+    pciutils
     ripgrep
     rye
     starship
