@@ -2,10 +2,12 @@
 
 in {
   imports = [
-    ./zsh.nix
     ./direnv.nix
-    ./helix.nix
+    ./fzf.nix
     ./git.nix
+    ./helix.nix
+    ./starship.nix
+    ./zsh.nix
   ];
 
   home.username = "avery";
@@ -43,18 +45,6 @@ in {
   ];
 
   fonts.fontconfig.enable = true;
-
-  programs.fzf = {
-    enable = true;
-  };
-
-  programs.starship = {
-    enable = true;
-    settings = {
-      add_newline = true;
-      line_break.disabled = true;
-    };
-  };
 
   home.stateVersion = "24.05";
   programs.home-manager.enable = true;
