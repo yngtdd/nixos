@@ -2,7 +2,6 @@
 
 in {
   imports = [
-    ./halloy.nix
     ./zsh.nix
     ./direnv.nix
     ./helix.nix
