@@ -56,6 +56,7 @@
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
+    jack.enable = true;
     # If you want to use JACK applications, uncomment this
     #jack.enable = true;
 
@@ -74,6 +75,7 @@
       "audio"
       "networkmanager"
       "wheel"
+      "video"
     ];
   };
 
@@ -114,6 +116,13 @@
     wget
     zsh
   ];  
+
+  fonts.fontDir.enable = true;
+  fonts.packages = with pkgs; [
+    nerdfonts
+    font-awesome
+    google-fonts
+  ];
 
   nix.gc = {
     automatic = true;
