@@ -22,6 +22,7 @@ in {
     bottom
     cachix
     delta
+    dunst
     dust
     flameshot
     firefox
