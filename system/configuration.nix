@@ -6,10 +6,20 @@
       ./hardware-configuration.nix
     ];
 
-  # Bootloader.
-  boot.loader.grub.enable = true;
-  boot.loader.grub.device = "/dev/nvme0n1";
-  boot.loader.grub.useOSProber = true;
+  boot = {
+    consoleLogLevel = 0;
+    initrd = {
+      verbose = false;
+    };
+
+    loader = {
+      grub = {
+        enable = true;
+        device = "/dev/nvme0n1";
+        useOSProber = true;
+      };
+    };
+  };
 
   networking.hostName = "nixos"; 
   networking.networkmanager.enable = true;
@@ -57,12 +67,6 @@
     alsa.support32Bit = true;
     pulse.enable = true;
     jack.enable = true;
-    # If you want to use JACK applications, uncomment this
-    #jack.enable = true;
-
-    # use the example session manager (no others are packaged yet so this is enabled by default,
-    # no need to redefine it in your config for now)
-    #media-session.enable = true;
   };
 
   musnix.enable = true;
@@ -117,12 +121,14 @@
     zsh
   ];  
 
-  fonts.fontDir.enable = true;
-  fonts.packages = with pkgs; [
-    nerdfonts
-    font-awesome
-    google-fonts
-  ];
+  fonts = {
+    fontDir.enable = true;
+    packages = with pkgs; [
+      nerdfonts
+      font-awesome
+      google-fonts
+    ];
+  };
 
   nix.gc = {
     automatic = true;

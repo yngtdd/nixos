@@ -5,6 +5,7 @@ in {
     ./direnv.nix
     ./fzf.nix
     ./git.nix
+#    ./gtk.nix
     ./helix.nix
     ./starship.nix
     ./zsh.nix
@@ -21,6 +22,7 @@ in {
     blender
     bottom
     cachix
+    catppuccin-gtk
     delta
     dunst
     dust
