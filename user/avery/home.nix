@@ -40,6 +40,7 @@ in {
     starship
     signal-desktop
     shiori
+    vlc
     wget
     zsh
   ];
