@@ -5,7 +5,7 @@ in {
     ./direnv.nix
     ./fzf.nix
     ./git.nix
-#    ./gtk.nix
+    ./gtk.nix
     ./helix.nix
     ./starship.nix
     ./zsh.nix
