@@ -18,6 +18,7 @@
           inputs.musnix.nixosModules.musnix
           ./system/bootloader.nix
           ./system/fonts.nix
+          ./system/gnome.nix
           ./system/sound.nix
           ./system/configuration.nix
 
