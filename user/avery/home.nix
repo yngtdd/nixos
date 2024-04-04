@@ -18,6 +18,7 @@ in {
     alacritty
     ani-cli
     anki-bin
+    avahi
     bat
     blender
     bottom

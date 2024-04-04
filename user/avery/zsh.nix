@@ -20,7 +20,7 @@
       fzf = "fzf --preview 'bat --color=always {}'";
       hzf = "hx $(fzf)";
       ll = "ls -l";
-      update = "sudo nixos-rebuild switch --flake";
+      update = "sudo nixos-rebuild switch --flake /home/avery/nixos/flake.nix";
     };
   };
 }
