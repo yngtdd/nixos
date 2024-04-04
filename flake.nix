@@ -21,6 +21,7 @@
           ./system/gnome.nix
           ./system/sound.nix
           ./system/time.nix
+          ./system/users.nix
           ./system/configuration.nix
 
           home-manager.nixosModules.home-manager {
