@@ -13,7 +13,6 @@
   environment.systemPackages = with pkgs; [
     gnomeExtensions.hue-lights
     teams-for-linux
-    wget
     zsh
   ];  
 

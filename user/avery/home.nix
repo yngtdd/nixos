@@ -23,6 +23,7 @@ in {
     blender
     bottom
     cachix
+    carapace
     catppuccin-gtk
     delta
     dunst
