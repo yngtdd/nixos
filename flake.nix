@@ -19,6 +19,7 @@
           ./system/bootloader.nix
           ./system/fonts.nix
           ./system/gnome.nix
+          ./system/networking.nix
           ./system/sound.nix
           ./system/time.nix
           ./system/users.nix

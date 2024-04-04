@@ -6,10 +6,6 @@
       ./hardware-configuration.nix
     ];
 
-  networking.hostName = "nixos"; 
-  networking.networkmanager.enable = true;
-  programs.nm-applet.enable = true;
-
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "jp";
