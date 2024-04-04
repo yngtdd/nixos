@@ -20,6 +20,7 @@
           ./system/fonts.nix
           ./system/gnome.nix
           ./system/sound.nix
+          ./system/time.nix
           ./system/configuration.nix
 
           home-manager.nixosModules.home-manager {

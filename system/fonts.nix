@@ -11,7 +11,7 @@
 
     fontconfig = {
       defaultFonts = {
-        monospace =  [ "Fira Code" ];
+        monospace =  [ "Reddit Mono" ];
         sansSerif = [ "Fira Sans" ];
         serif = [ "Roboto Serif" ];
       };
