@@ -20,6 +20,7 @@
           ./system/fonts.nix
           ./system/gnome.nix
           ./system/networking.nix
+          ./system/nvidia.nix
           ./system/sound.nix
           ./system/time.nix
           ./system/users.nix
