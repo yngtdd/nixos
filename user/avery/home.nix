@@ -45,6 +45,7 @@ in {
     starship
     signal-desktop
     shiori
+    tree
     vlc
     wget
     zsh

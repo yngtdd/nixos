@@ -22,6 +22,7 @@
           ./system/gnome.nix
           ./system/networking.nix
           ./system/nvidia.nix
+          ./system/printing.nix
           ./system/sound.nix
           ./system/time.nix
           ./system/users.nix
