@@ -8,10 +8,6 @@
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
-  
-  nixpkgs.config.permittedInsecurePackages = [
-    "electron-19.1.9"
-  ];
 
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -25,6 +21,5 @@
   users.defaultUserShell = pkgs.zsh;
   
   system.stateVersion = "23.11"; 
-
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 }
