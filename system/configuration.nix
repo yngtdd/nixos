@@ -6,15 +6,6 @@
       ./hardware-configuration.nix
     ];
 
-  # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "jp";
-    variant = "";
-  };
-
-  # Configure console keymap
-  console.keyMap = "jp106";
-
   # Enable CUPS to print documents.
   services.printing.enable = true;
   
