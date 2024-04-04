@@ -17,6 +17,8 @@
         modules = [
           inputs.musnix.nixosModules.musnix
           ./system/bootloader.nix
+          ./system/fonts.nix
+          ./system/sound.nix
           ./system/configuration.nix
 
           home-manager.nixosModules.home-manager {

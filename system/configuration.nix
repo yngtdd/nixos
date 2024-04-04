@@ -42,20 +42,6 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
-  # Enable sound with pipewire.
-  sound.enable = true;
-  hardware.pulseaudio.enable = false;
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    jack.enable = true;
-  };
-
-  musnix.enable = true;
-
   users.users.avery = {
     isNormalUser = true;
     initialPassword = "password";
@@ -106,22 +92,22 @@
     zsh
   ];  
 
-  fonts = {
-    fontDir.enable = true;
-    packages = with pkgs; [
-      nerdfonts
-      font-awesome
-      google-fonts
-    ];
+  #fonts = {
+  #  fontDir.enable = true;
+  #  packages = with pkgs; [
+  #    nerdfonts
+  #    font-awesome
+  #    google-fonts
+  #  ];
 
-    fontconfig = {
-      defaultFonts = {
-        monospace =  [ "Fira Code" ];
-        sansSerif = [ "Fira Sans" ];
-        serif = [ "Roboto Serif" ];
-      };
-    };
-  };
+  # fontconfig = {
+  #   defaultFonts = {
+  #      monospace =  [ "Fira Code" ];
+  #      sansSerif = [ "Fira Sans" ];
+  #      serif = [ "Roboto Serif" ];
+  #    };
+  # };
+  #};
  
 
   nix.gc = {
