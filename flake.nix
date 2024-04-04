@@ -16,6 +16,7 @@
         system = "x86_64-linux";
         modules = [
           inputs.musnix.nixosModules.musnix
+          ./system/bootloader.nix
           ./system/configuration.nix
 
           home-manager.nixosModules.home-manager {

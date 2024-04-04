@@ -39,6 +39,7 @@ in {
     obs-studio
     pciutils
     ripgrep
+    rofi
     rye
     starship
     signal-desktop

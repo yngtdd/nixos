@@ -6,7 +6,7 @@
     enable = true;
     defaultEditor = true;
     settings = {
-      theme = "onedark";
+      theme = "catppuccin_macchiato";
       editor = {
         true-color = true;
         line-number = "relative";

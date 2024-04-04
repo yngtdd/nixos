@@ -6,21 +6,6 @@
       ./hardware-configuration.nix
     ];
 
-  boot = {
-    consoleLogLevel = 0;
-    initrd = {
-      verbose = false;
-    };
-
-    loader = {
-      grub = {
-        enable = true;
-        device = "/dev/nvme0n1";
-        useOSProber = true;
-      };
-    };
-  };
-
   networking.hostName = "nixos"; 
   networking.networkmanager.enable = true;
   programs.nm-applet.enable = true;
@@ -128,7 +113,16 @@
       font-awesome
       google-fonts
     ];
+
+    fontconfig = {
+      defaultFonts = {
+        monospace =  [ "Fira Code" ];
+        sansSerif = [ "Fira Sans" ];
+        serif = [ "Roboto Serif" ];
+      };
+    };
   };
+ 
 
   nix.gc = {
     automatic = true;
