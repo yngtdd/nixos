@@ -21,12 +21,6 @@
     zsh
   ];  
 
-  nix.gc = {
-    automatic = true;
-    dates = "weekly";
-    options = "--delete-older-than 15d";
-  };
-
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
   
