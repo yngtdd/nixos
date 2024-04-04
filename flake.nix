@@ -20,6 +20,7 @@
           ./system/fonts.nix
           ./system/gc.nix
           ./system/gnome.nix
+          ./system/hyprland.nix
           ./system/networking.nix
           ./system/nvidia.nix
           ./system/printing.nix

@@ -40,13 +40,14 @@ in {
     obs-studio
     pciutils
     ripgrep
-    rofi
+    rofi-wayland
     rye
     starship
     signal-desktop
     shiori
     tree
     vlc
+    waybar
     wget
     zsh
   ];
