@@ -48,6 +48,7 @@ in {
     tree
     vlc
     waybar
+    wofi
     wget
     zsh
   ];
