@@ -1,83 +1,75 @@
-{ lib, config, theme, ... }: let
-  cfg = config.programs.alacritty;
-  inherit (lib) mkEnableOption mkIf;
-in {
-  options.programs.alacritty = {
-    enable = mkEnableOption "alacritty";
-  };
+{ config, pkgs, lib, ... }:
 
-  config = mkIf cfg.enable {
-    programs.alacritty = {
-      enable = true;
+{
+  programs.alacritty = {
+    enable = true;
+    settings = {
 
-      settings = {
-        window = {
-          opacity = theme.backgroundColor.toNormA;
-          padding = {
-            x = 10;
-            y = 10;
-          };
+      window.padding = {
+        x = 5;
+        y = 2;
+      };
+
+      shell.program = "${pkgs.zsh}/bin/zsh";
+
+      cursor.style = "Beam";
+
+      # Catpuccin-macchiato
+      # https://github.com/catppuccin/alacritty/blob/main/catppuccin-macchiato.toml
+      colors = {
+        primary = {
+          background = "#24273A";
+          foreground = "#CAD3F5";
+          dim_foreground = "#CAD3F5";
+          bright_foreground = "#CAD3F5";
         };
 
-        selection.save_to_clipboard = true;
-
-        key_bindings = [
-          {
-            key = "I";
-            mods = "Control|Shift";
-            action = "IncreaseFontSize";
-          }
-          {
-            key = "U";
-            mods = "Control|Shift";
-            action = "DecreaseFontSize";
-          }
-        ];
-
-        font = {
-          size = 11;
-          family = "FiraCode Nerd Font Mono";
-          normal = {
-            style = "Regular";
-          };
-          bold = {
-            style = "Bold";
-          };
+        normal = {
+          black = "#494D64";
+          red = "#ED8796";
+          green = "#A6DA95";
+          yellow = "#EED49F";
+          blue = "#8AADF4";
+          magenta = "#F5BDE6";
+          cyan = "#8BD5CA";
+          white = "#B8C0E0";
         };
 
-        colors = {
-          primary = {
-            background = "0x${theme.backgroundColor.toHexRGB}";
-            foreground = "0xc0caf5";
-          };
-          cursor = {
-            text = "0xc0caf5";
-            cursor = "0xffffff";
-          };
-          selection = {
-            text = "CellForeground"; # "0xc0caf5";
-            background = "0x33467c";
-          };
-          normal = {
-            black = "0x15161e";
-            red = "0xf7768e";
-            green = "0x9ece6a";
-            yellow = "0xe0af68";
-            blue = "0x7aa2f7";
-            magenta = "0xbb9af7";
-            cyan = "0x7dcfff";
-            white = "0xa9b1d6";
-          };
-          bright = {
-            black = "0x414868";
-            red = "0xf7768e";
-            green = "0x9ece6a";
-            yellow = "0xe0af68";
-            blue = "0x7aa2f7";
-            magenta = "0xbb9af7";
-            cyan = "0x7dcfff";
-            white = "0xc0caf5";
-          };
+        bright = {
+          black = "#5B6078";
+          red = "#ED8796";
+          green = "#A6DA95";
+          yellow = "#EED49F";
+          blue = "#8AADF4";
+          magenta = "#F5BDE6";
+          cyan = "#8BD5CA";
+          white = "#A5ADCB";
+        };
+
+        dim = {
+          black = "#494D64";
+          red = "#ED8796";
+          green = "#A6DA95";
+          yellow = "#EED49F";
+          blue = "#8AADF4";
+          magenta = "#F5BDE6";
+          cyan = "#8BD5CA";
+          white = "#B8C0E0";
+        };
+
+        footer_bar = {
+          foreground = "#24273A";
+          background = "#A5ADCB";
+        };
+
+        selection = {
+          text = "#24273A";
+          background = "#F4DBD6";
+        };
+
+        cursor = {
+          text = "#24273A";
+          cursor = "#F4DBD6";
         };
       };
     };
