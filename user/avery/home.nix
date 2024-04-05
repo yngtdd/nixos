@@ -33,7 +33,6 @@ in {
     flameshot
     firefox
     fzf
-    halloy
     hyfetch
     lf
     nerdfonts
