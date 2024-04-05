@@ -79,6 +79,26 @@
           cursor = "#B4BEFE";
         };
       };
+
+      keyboard.bindings = [ 
+        {
+          key = "Key0";
+          mods = "Control";
+          action = "ResetFontSize";
+        }
+        {
+          # When using the japanese keyboard, the key to the
+          # right of the Minus key is Key6
+          key = "ArrowUp"; 
+          mods = "Control";
+          action = "IncreaseFontSize";
+        }
+        {
+          key = "Minus";
+          mods = "Control";
+          action = "DecreaseFontSize";
+        }
+      ];
     };
   };
 }

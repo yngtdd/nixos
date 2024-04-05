@@ -11,6 +11,7 @@ in {
     ./hyprpaper.nix
     ./starship.nix
     ./waybar.nix
+    ./wofi.nix
     ./zsh.nix
   ];
 
