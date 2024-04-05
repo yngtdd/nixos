@@ -6,8 +6,8 @@
   xdg.configFile = {
     "wofi/config" = {
       text = ''
-        width=600
-        height=400
+        width=700
+        height=500
         show=drun
         prompt=Search...
         filter_rate=100
@@ -18,7 +18,7 @@
         content_halign=fill
         insensitive=true
         allow_images=true
-        image_size=40
+        image_size=30
         gtk_dark=true
       '';
     };
@@ -33,7 +33,7 @@
           border-radius: 15px;
           background-color: rgba(24, 25, 38, 1);
           font-family: "MonoLisa", "Font Awesome 6 Free Solid";
-          font-size: 12px;
+          font-size: 11px;
         }
 
         @keyframes gradient_f {
