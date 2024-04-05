@@ -8,6 +8,7 @@ in {
     ./git.nix
     ./gtk.nix
     ./helix.nix
+    ./hyprpaper.nix
     ./starship.nix
     ./waybar.nix
     ./zsh.nix

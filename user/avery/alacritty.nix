@@ -4,6 +4,7 @@
   programs.alacritty = {
     enable = true;
     settings = {
+      window.opacity = 0.95;
       window.padding = {
         x = 5;
         y = 2;
