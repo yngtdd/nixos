@@ -2,12 +2,14 @@
 
 in {
   imports = [
+    ./alacritty.nix
     ./direnv.nix
     ./fzf.nix
     ./git.nix
     ./gtk.nix
     ./helix.nix
     ./starship.nix
+    ./waybar.nix
     ./zsh.nix
   ];
 
