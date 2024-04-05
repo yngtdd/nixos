@@ -18,7 +18,6 @@ in {
   home.homeDirectory = "/home/avery";
 
   home.packages = with pkgs; [
-    alacritty
     ani-cli
     anki-bin
     avahi
