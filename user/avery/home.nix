@@ -49,7 +49,6 @@ in {
     shiori
     tree
     vlc
-    waybar
     wofi
     wget
     zsh

@@ -73,6 +73,11 @@
           text = "#24273A";
           cursor = "#F4DBD6";
         };
+
+        vi_mode_cursor = {
+          text = "#1E1E2E";
+          cursor = "#B4BEFE";
+        };
       };
     };
   };
