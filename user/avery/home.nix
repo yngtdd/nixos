@@ -33,7 +33,6 @@ in {
     dunst
     dust
     flameshot
-    firefox
     fzf
     hyfetch
     lf
