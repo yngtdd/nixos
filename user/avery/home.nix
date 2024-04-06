@@ -4,6 +4,7 @@ in {
   imports = [
     ./alacritty.nix
     ./direnv.nix
+    ./firefox.nix
     ./fzf.nix
     ./git.nix
     ./gtk.nix
