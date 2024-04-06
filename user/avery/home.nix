@@ -12,6 +12,7 @@ in {
     ./starship.nix
     ./waybar.nix
     ./wofi.nix
+    ./yazi/yazi.nix
     ./zsh.nix
   ];
 
@@ -40,6 +41,8 @@ in {
     vim
     neovim
     obs-studio
+    pamixer
+    pavucontrol
     pciutils
     ripgrep
     rye

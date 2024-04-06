@@ -8,11 +8,16 @@
   	package = pkgs.waybar;
   	settings = {
       mainBar = {
-          height = 20;
-          layer = "top";
-          modules-left = ["custom/launcher" "cpu" "memory" "custom/weather" "hyprland/workspaces"];
-          modules-center = ["mpris"];
-          modules-right = ["network" "pulseaudio" "backlight" "battery" "clock" "tray" "hyprland/language" "custom/wallpaper" "custom/power-menu"];
+        height = 10;
+        layer = "bottom";
+        position = "bottom";
+        margin-bottom = 0;
+        margin-top = 0;
+        margin-left = 5;
+        margin-right = 5;
+        modules-left = [ "custom/launcher" "cpu" "memory" "custom/weather" ];
+        modules-center = [ "mpris" "hyprland/workspaces" ];
+        modules-right = ["network" "pulseaudio" "backlight" "battery" "clock" "tray" "hyprland/language" "custom/wallpaper" "custom/power-menu"];
 
         "hyprland/workspaces" = {
           format = "{name}";
@@ -26,12 +31,6 @@
             "1" = [];
             "2" = [];
             "3" = [];
-            "4" = [];
-            "5" = [];
-            "6" = [];
-            "7" = [];
-            "8" = [];
-            "9" = [];
           };
         };
         "hyprland/language" = {
@@ -59,8 +58,8 @@
         };
         "memory" = {
           interval = 30;
-          format = "🎞️ {}%";
-          format-alt = "🎞️ {used:0.1f}GB";
+          format = " {}%";
+          format-alt = " {used:0.1f}GB";
           max-length = 10;
         };
         "temperature" = {
@@ -175,7 +174,7 @@
 
         "custom/launcher" = {
           format = "󱄅";
-          on-click = "rofi -show drun &";
+          on-click = "wofi -show drun &";
         };
 
         "custom/wallpaper" = {
@@ -188,7 +187,7 @@
                 * {
           /* `otf-font-awesome` is required to be installed for icons */
           font-family: Material Design Icons, JetBrainsMono Nerd Font, Iosevka Nerd Font ;
-          font-size: 14px;
+          font-size: 11px;
           border: none;
           border-radius: 0;
           min-height: 0;
@@ -275,7 +274,7 @@
           padding-right: 5px;
           font-family: Iosevka Nerd Font;
           font-weight: bold;
-          font-size: 12px;
+          font-size: 11px;
           margin-left: 0em;
           margin-right: 0em;
           transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
@@ -312,7 +311,7 @@
           background-color: #252733;
           padding: 0em 2em;
 
-          font-size: 14px;
+          font-size: 11px;
 
           padding-left: 7.5px;
           padding-right: 7.5px;
@@ -335,14 +334,14 @@
         #pulseaudio.muted {
           color: #fb958b;
           padding-left: 9px;
-          font-size: 22px;
+          font-size: 11px;
         }
 
         #backlight {
           color: #ecd3a0;
           padding-right: 5px;
           padding-left: 8px;
-          font-size: 21.2px;
+          font-size: 11px;
         }
 
         #network {
@@ -371,13 +370,12 @@
           color: #fb958b;
         }
 
-
         #battery {
           color: #8fbcbb;
           border-radius: 0px 8px 8px 0px;
           padding-right: 12px;
           padding-left: 12px;
-          font-size: 22px;
+          font-size: 11px;
         }
 
         #battery.critical,
@@ -438,6 +436,7 @@
           border-radius : 8px 0 0 8px;
           margin-top: 7px;
           margin-bottom: 7px;
+          padding-right: 7.5px;
         }
 
         #custom-power-menu {
