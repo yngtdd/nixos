@@ -9,4 +9,6 @@
 
   # Configure console keymap
   console.keyMap = "jp106";
+
+  hardware.keyboard.qmk.enable = true;
 }
