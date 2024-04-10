@@ -14,14 +14,14 @@
         name = "default";
         isDefault = true;
         settings = {
-          "browser.startup.homepage" = "https://searx.aicampground.com";
-          "browser.search.defaultenginename" = "Searx";
-          "browser.search.order.1" = "Searx";
+          "browser.startup.homepage" = "https://google.com";
+          "browser.search.defaultenginename" = "Google";
+          "browser.search.order.1" = "Google";
       };
       search = {
         force = true;
-        default = "Searx";
-        order = [ "Searx" "Google" ];
+        default = "Google";
+        order = [ "Google" "Searx" ];
         engines = {
           "Nix Packages" = {
             urls = [{
