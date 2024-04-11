@@ -136,7 +136,7 @@
         };
 
         "custom/weather" = {
-          exec = "nix-shell ~/.config/waybar/scripts/weather.py";
+          exec = "wttrbar --fahrenheit"; # Configured in home manager
           restart-interval = 300;
           return-type = "json";
         };

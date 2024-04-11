@@ -40,6 +40,7 @@ in {
     nushell
     vim
     neovim
+    obsidian
     obs-studio
     pamixer
     pavucontrol
@@ -52,6 +53,7 @@ in {
     tree
     vlc
     wget
+    wttrbar
     zsh
   ];
 
