@@ -14,6 +14,7 @@ in {
     ./waybar.nix
     ./wofi.nix
     ./yazi/yazi.nix
+    ./zoxide.nix
     ./zsh.nix
   ];
 
@@ -36,6 +37,7 @@ in {
     fzf
     hyfetch
     lf
+    micromamba
     nerdfonts
     nushell
     vim
@@ -50,10 +52,13 @@ in {
     starship
     signal-desktop
     shiori
+    sops
     tree
     vlc
+    vscodium
     wget
     wttrbar
+    zig
     zsh
   ];
 
