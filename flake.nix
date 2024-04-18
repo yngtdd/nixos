@@ -18,7 +18,7 @@
           inputs.musnix.nixosModules.musnix
           ./system/bootloader.nix
           ./system/fonts.nix
-          ./system/gc.nix
+          #./system/gc.nix
           ./system/gnome.nix
           ./system/hyprland.nix
           ./system/networking.nix
