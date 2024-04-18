@@ -11,6 +11,7 @@ in {
     ./helix.nix
     ./hyprpaper.nix
     ./starship.nix
+    #./swww.nix
     ./waybar.nix
     ./wofi.nix
     ./yazi/yazi.nix
@@ -53,6 +54,7 @@ in {
     signal-desktop
     shiori
     sops
+    swww
     tree
     vlc
     vscodium
