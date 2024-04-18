@@ -40,6 +40,7 @@ in {
     lf
     micromamba
     nerdfonts
+    nh
     nushell
     vim
     neovim
