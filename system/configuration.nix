@@ -8,6 +8,7 @@
 
   environment.systemPackages = with pkgs; [
     gnomeExtensions.hue-lights
+    nh
     teams-for-linux
     zsh
   ];  

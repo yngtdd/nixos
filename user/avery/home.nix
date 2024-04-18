@@ -10,7 +10,6 @@ in {
     ./gtk.nix
     ./helix.nix
     ./hyprpaper.nix
-    ./nh.nix
     ./starship.nix
     ./waybar.nix
     ./wofi.nix
@@ -40,7 +39,6 @@ in {
     lf
     micromamba
     nerdfonts
-    nh
     nushell
     vim
     neovim

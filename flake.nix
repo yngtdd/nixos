@@ -22,6 +22,7 @@
           ./system/gnome.nix
           ./system/hyprland.nix
           ./system/networking.nix
+          ./system/nh.nix
           ./system/nvidia.nix
           ./system/printing.nix
           ./system/sound.nix
