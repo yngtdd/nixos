@@ -6,6 +6,10 @@
       ./hardware-configuration.nix
     ];
 
+  environment.sessionVariables = {
+    FLAKE = "/home/avery/nixos";
+  };
+
   environment.systemPackages = with pkgs; [
     gnomeExtensions.hue-lights
     nh
