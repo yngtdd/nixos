@@ -17,6 +17,7 @@
         modules = [
           inputs.musnix.nixosModules.musnix
           ./system/bootloader.nix
+          ./system/configuration.nix
           ./system/fonts.nix
           #./system/gc.nix
           ./system/gnome.nix
@@ -28,7 +29,6 @@
           ./system/sound.nix
           ./system/time.nix
           ./system/users.nix
-          ./system/configuration.nix
 
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
