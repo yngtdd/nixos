@@ -37,6 +37,7 @@ in {
     flameshot
     fzf
     hyfetch
+    hyprshot
     lf
     micromamba
     nerdfonts
@@ -45,6 +46,7 @@ in {
     neovim
     obsidian
     obs-studio
+    opentofu
     pamixer
     pavucontrol
     pciutils
@@ -62,6 +64,7 @@ in {
     wttrbar
     zig
     zsh
+    zoom-us
   ];
 
   fonts.fontconfig.enable = true;
