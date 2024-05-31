@@ -2,13 +2,18 @@
 
 {
   # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "jp";
-    variant = "";
+  #services.xserver.xkb = {
+  #  layout = "us";
+  #  variant = "";
+  #};
+
+  services.xserver = {
+    layout = "us";
+    xkbVariant = "qwerty";
   };
 
   # Configure console keymap
-  console.keyMap = "jp106";
+  console.keyMap = "us";
 
   hardware.keyboard.qmk.enable = true;
 }
