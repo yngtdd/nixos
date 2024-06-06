@@ -55,6 +55,7 @@ in {
     starship
     signal-desktop
     shiori
+    sonic-visualiser
     sops
     swww
     tree
