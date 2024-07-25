@@ -26,6 +26,8 @@ in {
     ani-cli
     anki-bin
     avahi
+    azure-cli
+    azure-functions-core-tools
     bat
     blender
     bottom
@@ -60,6 +62,7 @@ in {
     swww
     tree
     vlc
+    ventoy-full
     vscodium
     wget
     wttrbar
