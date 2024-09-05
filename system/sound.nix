@@ -13,4 +13,7 @@
   };
 
   musnix.enable = true;
+  musnix.soundcardPciId = "0b:00.1";
+  musnix.kernel.realtime = true;
+  musnix.rtirq.enable = true;
 }

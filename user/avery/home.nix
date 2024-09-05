@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: let 
+{ config, lib, pkgs, ... }: let 
 
 in {
   imports = [
@@ -25,6 +25,8 @@ in {
   home.packages = with pkgs; [
     ani-cli
     anki-bin
+    ardour
+    audacity
     avahi
     azure-cli
     azure-functions-core-tools
@@ -52,6 +54,7 @@ in {
     pamixer
     pavucontrol
     pciutils
+    qjackctl
     ripgrep
     rye
     starship

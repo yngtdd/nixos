@@ -7,16 +7,19 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    musnix  = { url = "github:musnix/musnix"; };
-    rust-overlay.url = "github:oxalica/rust-overlay";
+    musnix.url = "github:musnix/musnix";
+    rust-overlay = {
+      url = "github:oxalica/rust-overlay";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = inputs@{ self, nixpkgs, rust-overlay, home-manager, ... }: {
+  outputs = inputs@{ self, nixpkgs, musnix, rust-overlay, home-manager, ... }: {
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          inputs.musnix.nixosModules.musnix
+          musnix.nixosModules.musnix
           ./system/bootloader.nix
           ./system/configuration.nix
           ./system/fonts.nix

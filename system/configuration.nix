@@ -10,10 +10,15 @@
     FLAKE = "/home/avery/nixos";
   };
 
+  nixpkgs.config.allowUnfree = true;
+  
+
   environment.systemPackages = with pkgs; [
     gnomeExtensions.hue-lights
     nh
     teams-for-linux
+    steam
+    steam-run
     zsh
   ];  
 
